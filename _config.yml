@@ -1,0 +1,6 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+url: http://learnerror.com
+author: VinceChow
+pygments: true
+paginate: 24
