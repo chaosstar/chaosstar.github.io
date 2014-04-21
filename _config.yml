@@ -4,4 +4,4 @@ author: VinceChow
 markdown: redcarpet
 pygments: true
 paginate: 24
-timezone: Asia/Shanghai
+timezone: "Asia/Shanghai"
