@@ -12,15 +12,15 @@ tags: [python, numpy]
 
 #### 1. `arange`: `array`类型的`range`函数
 
-    ```python
-    from numpy import *
-    
-    a = arange(5)
-    a
-    ```
-    
-    ```python
-    array([0, 1, 2, 3, 4])
+```python
+from numpy import *
+
+a = arange(5)
+a
+```
+
+```python
+array([0, 1, 2, 3, 4])
     ```
 
 
