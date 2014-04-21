@@ -18,6 +18,7 @@ tags: [python, numpy]
     a = arange(5)
     a
     ```
+    
     ```python
     array([0, 1, 2, 3, 4])
     ```
