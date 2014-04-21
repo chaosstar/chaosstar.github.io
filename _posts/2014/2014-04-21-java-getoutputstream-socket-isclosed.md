@@ -2,7 +2,7 @@
 layout: post
 title: "Android Java socket异常"
 description: ""
-category: [java, android]
+category: java, android
 tags: [java, android, socket, 网络]
 ---
 
