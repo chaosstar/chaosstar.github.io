@@ -9,9 +9,11 @@ tags: [java, android, socket, 网络]
 ## 问题
 
 最近在做Android上连接打印机的项目，遇到一个问题：`socket`正常连接后，在调用`socket`的`getOutputStream`时抛出异常提示:
+
 > java.net.SocketException: Socket is closed
 
 一开始，我很诧异，这个异常就很奇怪，明明前面的`socket`也正常创建连接且没有关闭，为什么到这就变成已关闭呢？查了半天，终于在[SO](http://stackoverflow.com/questions/8890303/behavior-of-java-sockets-when-closing-output-stream)上找到问题根源：原来我在使用`Writer`对象就关闭了它，这就引起`OutputStream`的关闭，进而引起`socket`的关闭，从而就出错了：
+
 > Writer.close()  --> OutputStream.close() -->  Socket.close()
 
 连锁反应啊！
