@@ -1,7 +1,7 @@
 permalink: /:year/:month/:title/
 url: http://learnerror.com
 author: VinceChow
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 paginate: 24
 timezone: "Asia/Shanghai"

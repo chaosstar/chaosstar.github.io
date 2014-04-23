@@ -7,14 +7,30 @@
     <link rel="shortcut icon" href="/favicon.gif">
     <link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
     
-    <link rel="stylesheet" href="/media/css/highlight.css">
+    <link rel="stylesheet" href="/media/css/hlstyles/railscasts.css">
+        <script src="/media/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <link href='/media/webfonts/ss-social.css' rel='stylesheet'>
     <link href='/media/webfonts/ss-standard.css' rel='stylesheet'>
     <link href="/media/css/screen.css" rel="stylesheet">
 
     <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+        
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'],["\\(","\\)"]],
+          displayMath: [['\\[','\\]'], ['$$','$$']],
+          balanceBraces: true          
+        }
+      });
+    </script>
+    <script type='text/javascript' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+
   </head>
   <body>
+
     <div id="container">
       <div id="main" role="main">
         <header>
